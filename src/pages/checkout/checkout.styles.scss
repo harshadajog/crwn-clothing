@@ -28,5 +28,31 @@
       margin-left: auto;
       font-size: 36px;
     }
-  }
+
+    .test-warning {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 24px;
+      color: red;
+    }
+
+    button{
+    background: #5469d4;
+    color: #ffffff;
+    border-radius: 0 0 4px 4px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+    margin-left: auto;
+    margin-top: 50px;
+    border: 0;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    transition: all 0.2s ease;
+    
+    
+    }
+}
   
