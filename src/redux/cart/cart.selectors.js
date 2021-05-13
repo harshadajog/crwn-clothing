@@ -33,3 +33,6 @@ export const selectCartHidden = createSelector(
     cart => cart.hidden
 )
 
+export const resetCart = createSelector(
+    cartItems => []    
+)

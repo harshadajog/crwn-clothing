@@ -1,14 +1,44 @@
 .header {
-    height: 70px;
+    height: 100px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content:stretch;
     margin-bottom: 25px;
+    margin-top: 0px;
+    padding-top: 0px; 
+    background-color: #f4d4b7;
   
     .logo-container {
       height: 100%;
       width: 70px;
-      padding: 25px;
+      padding: 0px;
+    }
+
+    .logo-img {
+      background: url('../../assets/img/Naturalzv6_100.png') no-repeat;
+	    width: 100px;
+	    height:100px;
+	    margin-top: 0px;
+      margin-top: 0px;
+    }
+
+    .brand-name {
+      font-family: 'Lora', serif;
+      color: #4F4846;
+      font-size: 1.5em;
+      text-shadow: 1px 1px 1px #222;
+      margin-top: 10;
+      justify-content:left;
+      margin-bottom: 0;
+      padding-left: 0px;
+      margin-left: 0px;
+      line-height: .75;
+      margin-top: 35px;
+    }
+
+    .tagline{
+      padding-top:0px;
+      font-size: 0.9em;
     }
   
     .options {
@@ -21,7 +51,12 @@
       .option {
         padding: 10px 15px;
         cursor: pointer;
+
+      &:hover {
+        background:#266150;
+	      color:#FDF8F5; 
       }
+    }
     }
   }
   
