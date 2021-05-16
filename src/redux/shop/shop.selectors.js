@@ -3,7 +3,7 @@ import memoize from 'lodash.memoize';
 
 const COLLECTION_ID_MAP = {
     soaps: 1,
-    oils: 2,
+    oilsserums: 2,
     bodybutters: 3,
     lipbalms: 4,
     giftsets: 5

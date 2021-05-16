@@ -2,32 +2,32 @@ const INITIAL_STATE = {
     sections: [
         {
           title: 'soaps',
-          imageUrl: "images/soap2.jpg",
+          imageUrl: "https://i.ibb.co/JyVnCdq/soap2.jpg",
           id: 1,
           linkUrl: 'shop/soaps'
         },
         {
           title: 'oils',
-          imageUrl: 'images/oils_serums.jpg',
+          imageUrl: 'https://i.ibb.co/5MdxtxY/oils-serums.jpg',
           id: 2,
-          linkUrl: 'shop/oils'
+          linkUrl: 'shop/oilsserums'
         },
         {
           title: 'body butters',
-          imageUrl: 'images/body_butters.jpg',
+          imageUrl: 'https://i.ibb.co/vB887jv/body-butters.jpg',
           id: 3,
           linkUrl: 'shop/bodybutters'
         },
         {
           title: 'Lip Balms',
-          imageUrl: 'images/lip_balm.jpg',
+          imageUrl: 'https://i.ibb.co/qp7C6Rt/lip-balm.jpg',
           size: 'large',
           id: 4,
           linkUrl: 'shop/lipbalms',
         },
         {
           title: 'gift sets',
-          imageUrl: 'images/gift_sets.jpg',
+          imageUrl: 'https://i.ibb.co/gZ6wVV7/gift-sets.jpg',
           size: 'large',
           id: 5,
           linkUrl: 'shop/giftsets'
