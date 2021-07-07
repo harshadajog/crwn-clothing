@@ -16,4 +16,18 @@
       margin-bottom: 30px;
     }
   }
+
+  @media screen and (max-width: 800px){
+      
+    .title {
+      font-size: 2rem;
+      margin: 25px auto 30px;
+    }
+
+    .items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+    }
+  }
 }
