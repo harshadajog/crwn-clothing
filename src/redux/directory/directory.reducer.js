@@ -10,7 +10,7 @@ const INITIAL_STATE = {
           title: 'oils',
           imageUrl: 'https://i.ibb.co/5MdxtxY/oils-serums.jpg',
           id: 2,
-          linkUrl: 'shop/oilsserums'
+          linkUrl: 'shop/oilsandserums'
         },
         {
           title: 'body butters',

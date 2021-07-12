@@ -42,6 +42,25 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     return userRef;
 }
 
+export const convertCollectionsSnapshotToMap = (collections)=> {
+    const transformedCollection = collections.docs.map(doc => {
+        const { title, items } = doc.data();
+
+        return {
+            routeName: encodeURI(title.replace(/ /g, "").toLowerCase()),
+            id: doc.id,
+            title,
+            items
+        };
+    });
+    console.log(transformedCollection);
+    return transformedCollection.reduce((accumulator, collection) => {
+        accumulator[collection.title.replace(/ /g, "").toLowerCase()] = collection;
+        return accumulator;
+    }, {});
+}
+
+// Use this snippet to add new collections/documents whenever needed.
 export const addCollectionAndDocuments = async(collectionKey, objectsToAdd) => {
     const collectionRef = firestore.collection(collectionKey);
 

@@ -30,7 +30,7 @@ const SHOP_DATA = [
   {
     id: 2,
     title: 'Oils And Serums',
-    routeName: 'oilsserums',
+    routeName: 'oilsandserums',
     items: [
       {
         id: 4,
