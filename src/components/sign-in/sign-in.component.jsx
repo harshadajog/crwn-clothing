@@ -30,8 +30,9 @@ class SignIn extends React.Component {
             if (errorCode === 'auth/wrong-password') {
                 alert('Wrong password.');
                 return;
+            }else {
+                alert(`Error!! ${errorCode} : ${errorMessage}`);
             }
-            console.log(error);
         }
     };
 

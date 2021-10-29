@@ -9,10 +9,9 @@ const StripeCheckoutButton = ({ price, resetCart}) => {
     const publishableKey = 'pk_test_51IlJuwKHoTsOEzANCtDYHWdjurDOh8OlYM9YarwbGlPZ7WvkBcvzXsHwoUlDdL1XfwhnYDf3yRqpHbJthdXV0hGQ00F1iiREPS';
 
    const onToken = token => {
-        console.log(token);
         alert('Payment Successful');
 
-        {/* Clear Shopping cart */}
+    //  Clear shopping cart
         resetCart();
     }
     

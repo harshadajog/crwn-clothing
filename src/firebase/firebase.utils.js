@@ -53,7 +53,7 @@ export const convertCollectionsSnapshotToMap = (collections)=> {
             items
         };
     });
-    console.log(transformedCollection);
+ 
     return transformedCollection.reduce((accumulator, collection) => {
         accumulator[collection.title.replace(/ /g, "").toLowerCase()] = collection;
         return accumulator;
@@ -67,7 +67,6 @@ export const addCollectionAndDocuments = async(collectionKey, objectsToAdd) => {
     const batch = firestore.batch();
     objectsToAdd.forEach(obj => {
         const newDocRef = collectionRef.doc();
-        console.log(newDocRef);
         batch.set(newDocRef, obj);
     });
 
