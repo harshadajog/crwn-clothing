@@ -11,14 +11,23 @@ import Header from './components/header/header.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from '../src/redux/user/user.actions';
 import { selectCurrentUser} from './redux/user/user.selectors';
+import Preloader from './components/Preloader/Preloader';
 
 import { GlobalStyle } from './global.styles';
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
+  timer;
+
+  constructor(props){
+    super(props);
+    this.state = {load: true}
+  }
 
   componentDidMount() {
-
+    this.timer = setTimeout(() => {
+      this.setState({load: false});
+    }, 3000);
     const { setCurrentUser } = this.props;
 
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
@@ -43,6 +52,7 @@ class App extends React.Component {
   }
 
   componentWillUnmount(){
+    clearTimeout(this.timer);
     this.unsubscribeFromAuth();
   }
 
@@ -50,6 +60,7 @@ class App extends React.Component {
     return (
       <div>
         <GlobalStyle />
+        <Preloader load={this.state.load} />
         <Header />
         <Switch>
           <Route exact path='/' component={HomePage} />
